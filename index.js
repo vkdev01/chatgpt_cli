@@ -20,7 +20,6 @@ async function main() {
             // Contructing messages by iterating over the history
             const messages = chatHistory.map(([role, content]) => ({role, content}));
 
-            console.log(messages);
             // add latest user input
             messages.push({role: 'user', content: userInput});
 
@@ -44,6 +43,7 @@ async function main() {
 
 
             // Updating chat history with input and response
+
 
             chatHistory.push(['user', userInput]);
             chatHistory.push(['assistant', completionText]);
