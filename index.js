@@ -53,8 +53,7 @@ async function main() {
             console.error(colors.red(error));
         }
     }
-
-
+    
 }
 
 main();
